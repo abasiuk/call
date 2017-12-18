@@ -1,0 +1,533 @@
+@import "bourbon/bourbon"
+
+$main-color: #fff
+$headers-color: #2d393d
+
++font-face("ProximaNova", "../fonts/ProximaNova-Regular", normal, $file-formats:otf woff ttf)
++font-face("HelveticaBold", "../fonts/HelveticaNeueCyr-Bold", normal, $file-formats:otf woff ttf)
++font-face("HelveticaLight", "../fonts/HelveticaNeueCyr-Light", normal, $file-formats:otf woff ttf)
++font-face("HelveticaMedium", "../fonts/HelveticaNeueCyr-Medium", normal, $file-formats:otf woff ttf)
++font-face("HelveticaRoman", "../fonts/HelveticaNeueCyr-Roman", normal, $file-formats:otf woff ttf)
+
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.375
+	font-family: "HelveticaRoman", sans-serif
+	overflow-x: hidden
+	color: #fff
+	background-color: #fff
+
+.hidden
+	display: none
+
+a, a:hover, a:active, a:focus
+	color: $headers-color
+	text-decoration: none
+	outline: none;
+.one-word
+	white-space: nowrap
+.headers
+	font-family: "HelveticaMedium"
+	font-weight: normal
+	color: $headers-color
+	text-align: center
+
+h1, h2, h3, h4, h5, h6
+	@extend .headers
+	margin-bottom: 0
+	span
+		color: $main-color
+
+
+/* header */
+.main-head
+	padding-top: 27px
+	min-height: 705px
+	background: url(../images/main-bg.png) top center no-repeat
+	background-size: cover
+.logo
+	display: inline-block
+	margin-left: 17px
+.logo__pic
+	display: block
+	min-width: 133px
+	min-height: 48px
+.nav__list
+	margin: 0
+	padding: 0 25px 0
+	text-align: justify
+	width: 718px
+	margin-left: 65px
+	line-height: 0
+ 
+	/* Opera Presto */
+	font-size: 1px
+	&:after
+		width: 100%
+		height: 0px
+		visibility: hidden
+		overflow: hidden
+		content: ""
+		display: inline-block
+	.nav__item
+		display: inline-block
+		text-align: left
+		line-height: normal
+		font-size: 17px
+		vertical-align: top
+.nav__link
+	display: block
+	color: #fff
+	font-family: 'HelveticaMedium'
+	font-weight: 400
+	font-size: 17px
+	letter-spacing: 0.6px
+	font-weight: 500
+	padding: 13px 9px
+	-o-transition: all .75 ease
+	-moz-transition: all .75 ease
+	-webkit-transition: all .75 ease
+	transition: all .75s ease
+	&:hover
+		background-color: $main-color
+.social__list
+	width: 135px
+	text-align: justify
+	line-height: 0
+	font-size: 1px
+	margin-left: 1px
+	&:after
+		width: 100%
+		height: 0px
+		visibility: hidden
+		overflow: hidden
+		content: ""
+		display: inline-block
+	.social__item
+		display: inline-block
+		text-align: left
+		line-height: normal
+		font-size: 17px
+		vertical-align: top
+		&:nth-child(2)
+			.social__link
+				background-position: 58px 0 
+		&:nth-child(3)
+			.social__link
+				background-position: 15px 0 
+.social__link
+	display: block
+	height: 18px
+	width: 15px
+	margin: 12px 0
+	background-image: url("../images/social.png")
+	background-position: 0 0
+.main-title
+	padding-top: 105px
+	padding-left: 13px
+.main-title__header
+	font-family: 'HelveticaLight'
+	font-size: em(50px)
+	text-align: left
+	line-height: 1.35
+	color: #fff
+	margin-top: 0
+	margin-bottom: 35px
+.city__select
+	border: none
+	background: transparent
+	appearance: none
+	outline: none
+	font-size: em(17px)
+	width: 190px
+	border-radius: 5px
+	background: url(../images/arrow-select.png) calc(100% - 15px) center no-repeat
+	option
+		color: #a8a8a8
+select::-ms-expand
+	display: none
+.city__text
+	margin: 7px 0 0
+.city__phone
+	font-size: em(24px)
+	margin-right: 28px
+	font-family: 'HelveticaLight'
+.email
+	font-size: em(17px)
+	font-family: 'HelveticaRoman', $helvetica
+.call-img
+	padding-top: 135px
+.call-img__circle
+	background: url(../images/operator.jpg) center no-repeat
+	height: 270px
+	width: 270px
+	margin: 0 auto
+	position: relative
+	left: -3px
+	&:after
+		content: ''
+		display: block
+		height: 374px
+		width: 374px
+		position: absolute
+		border-radius: 50%
+		background: transparent
+		border: 40px solid rgba(255,255,255,0.5) 
+		top: 50%
+		left: 50%
+		margin-left: -187px
+		margin-top: -187px
+	&:before
+		content: ''
+		display: block
+		height: 496px
+		width: 496px
+		position: absolute
+		border-radius: 50%
+		background: transparent
+		border: 30px solid rgba(255,255,255,0.2) 
+		top: 50%
+		left: 50%
+		margin-left: -249px
+		margin-top: -249px
+.call-img__pic
+	display: block
+	position: absolute
+	top: 17px
+	left: -31px
+	bottom: 0
+	right: 0
+	margin: auto
+
+/*about section*/
+.about
+	margin-top: -139px
+	background: url(../images/about-bg.png) center bottom no-repeat
+	background-size: cover
+	padding-bottom: 360px
+.header-sect__pic
+	display: block
+	width: 65px
+	height: 65px
+	border-radius: 50%
+	margin: 0 auto
+.header-sect__title
+	font-size: em(36px)
+	letter-spacing: 0.8px
+	margin-top: 15px
+.header-sect__desc
+	font-size: em(20px)
+	line-height: 1.7
+	color: rgba(91, 96, 107, 0.8);
+	margin: 22px auto 0
+	text-align: center
+	display: block
+	width: 575px
+.operators
+	width: 1117px
+	display: block
+	margin: 60px auto 0
+	border-radius: 5px 
+.advantages
+	padding: 78px 28px
+.advantages__pic
+	display: inline-block
+	width: 46px
+	height: 50px
+.advantages__title
+	text-align: left
+	color: #262626
+	font-size: em(22px)
+	margin-top: 17px
+.advantages__desc
+	color: #6a6c73
+	font-family: 'HelveticaRoman', $helvetica
+	font-size: em(15px)
+	line-height: 2
+	letter-spacing: .4px
+	text-align: left
+	margin-top: 10px
+	margin-bottom: 14px
+.advantages__list
+	margin: 0
+	padding: 0
+	list-style-type: none
+.advantages__list-item
+	display: block
+	color: rgba(45, 45, 45, 0.9);
+	text-align: left
+	font-family: 'HelveticaBold', $helvetica
+	font-size: em(16px)
+	line-height: 1.5
+	padding-left: 40px
+	margin-bottom: 12px
+	position: relative
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		left: 0
+		top: 50%
+		margin-top: -11px
+		width: 21px
+		height: 21px
+		background: url(../images/about-check.png) center no-repeat 
+.advantages__link
+	display: block
+	margin: 43px auto 0
+	width: 127px
+	text-transform: uppercase
+	font-size: em(13px)
+	font-family: 'HelveticaMedium', $helvetica
+	color: #262626;
+	text-align: center
+	position: relative
+	&:after
+		content: ''
+		display: block
+		width: 100%
+		height: 2px
+		background: #ffb822
+		position: absolute
+		bottom: -9px	
+		left: 0
+
+/*clients*/
+.clients
+	margin-top: -200px
+.logo-client__item
+	width: 100%
+	height: 165px
+	text-align: center	
+	&:before
+		display: inline-block
+		height: 100%
+		vertical-align: middle
+		content: ''
+.logo-client__pic
+	display: inline-block
+	vertical-align: middle
+	margin: 0 auto
+	max-width: 100%
+.logo-client
+	margin-top: 52px
+.butt__link
+	width: 183px
+	display: block
+	margin: 46px auto 0
+	text-transform: uppercase
+	border-radius: 4px
+	background: #ffd364
+	text-align: center
+	padding: 12px 20px
+	font-size: em(15px)
+	font-family: 'HelveticaBold', $helvetica
+	font-weight: bold
+/*services*/
+.services
+	padding-top: 336px
+	margin-top: -110px
+	background: url(../images/services-bg.png) center top no-repeat
+	min-height: 1345px
+.header-sect__desc_oneline
+	width: 100%
+	color: rgba(255, 255, 255, 0.7)
+.header-sect__title_white
+	color: #fff
+.services-list
+	padding: 0 14px
+.services-list__item
+	padding-top: 50px
+.services-list__circle
+	width: 160px
+	height: 160px
+	margin: 0 auto 0
+	border-radius: 50%
+	background-color: #765d92
+	position: relative
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		width: 218px
+		height: 218px
+		top: 50%
+		left: 50%
+		border-radius: 50%
+		margin-top: -109px
+		margin-left: -109px
+		background: transparent
+		border: 15px solid rgba(255,255,255,0.1)
+.services-list__img
+	display: block
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	margin: auto
+.services-list__title
+	font-size: em(20px)
+	color: #fff
+	width: 180px
+	margin: 44px auto 13px
+	line-height: 1.33
+.services-list__title_max
+	width: 200px
+.services-list__desc
+	font-size: em(15px)
+	line-height: 1.67
+	text-align: center
+	color: rgba(255, 255, 255, 0.6)
+	font-family: "Helvetica", $helvetica
+	width: 200px
+	margin: 0 auto
+.services-list__desc_twoline
+	width: 300px
+.services__link
+	width: 168px
+	font-size: em(13px)
+	display: block
+	margin: 59px auto 0
+	text-transform: uppercase
+	border-radius: 4px
+	color: #fff
+	text-align: center
+	position: relative
+	&:after
+		content: ''
+		display: block
+		width: 100%
+		height: 2px
+		background: #ffb822
+		position: absolute
+		bottom: -9px	
+		left: 0
+
+/*career*/
+.career
+	margin-top: -147px
+	min-height: 2087px
+.vacancies
+	margin-top: 58px
+	padding-top: 46px
+	border-top: 1px solid rgba(0,0,0,.1)
+.career__title
+	text-align: center
+	color: #cc4012
+	font-size: em(24px)
+	margin-top: 0
+.vacancies__item
+	padding-left: 52px
+	padding-top: 41px
+.vacancies__name
+	color: #262626
+	font-size: em(20px)
+	text-align: left
+	margin: 0
+	position: relative
+	display: block
+	&:before
+		content: ''
+		width: 20px
+		height: 21px
+		display: block
+		position: absolute
+		top: 5px
+		left: -38px
+		background: url(../images/vacancies-1.png) center no-repeat
+		background-size: cover
+.vacancies__desc
+	font-size: em(15px)
+	line-height: 1.67
+	letter-spacing: 0.4px
+	text-align: left
+	color: #6e7179
+.vacancies__desc_main
+	color: rgba(110, 113, 121, 0.8)
+	text-align: center
+	width: 60%
+	margin: 18px auto 0
+.butt__link_vacancies
+	margin-top: 42px
+	width: 162px
+
+.office
+	margin-top: 71px
+	padding-top: 46px
+	border-top: 1px solid rgba(0,0,0,.1)
+.office-slider
+	margin-top: 53px
+	.owl-item:nth-child(2n)
+		padding-top: 30px
+.office__city, .office__count
+	font-size: em(14px)
+	color: #262626
+	text-align: left
+.office__count
+	font-family: 'HelveticaRoman', $helvetica
+	color: #6e7179
+.office__city
+	font-family: 'HelveticaBold', $helvetica
+	margin-top: 23px
+	margin-bottom: 0
+.office__count
+	margin-top: 1px
+	margin-bottom: 0
+.office__pic
+	width: 100%
+	border-radius: 4px
+.vacancies__desc_office
+	text-align: center
+	width: 60%
+	margin: -1px auto 0
+	font-size: em(20px)
+	font-family: 'HelveticaRoman', $helvetica
+.our-advantages
+	margin-top: 60px
+	padding-top: 49px
+	border-top: 1px solid rgba(0,0,0,.1)
+	margin-bottom: 30px
+.our-advantages__item
+	padding-top: 43px
+	padding-left: 13px
+	margin-right: -15px
+.our-advantages__title
+	margin-top: 0
+.our-advantages__desc
+	padding-left: 40px
+	margin-top: -8px
+	margin-bottom: 0
+.advantages__link_our-advantages
+	width: 162px
+	margin-top: 57px
+
+/*reviews*/
+.reviews
+	background: #e4e4e4
+.review-slider__item
+	display: inline-block
+	vertical-align: bottom
+.review-slider__text
+	font-size: em(16px)
+	color: #7f7f7f
+	font-family: 'ProximaNova', $helvetica
+	line-height: 1.56
+	padding: 36px 29px
+	background: #fff
+	border-radius: 5px
+.review-slider__name
+	font-size: em(15px)
+	font-family: 'HelveticaBold', $helvetica
+	color: rgba(38, 38, 38, 0.9)
+	text-align: left
+.review-slider__post
+	font-family: 'HelveticaRoman', $helvetica
+	font-size: em(15px)
+	color: #6e7179
+.review-slider__photo
+	float: left
+	margin-right: 24px
