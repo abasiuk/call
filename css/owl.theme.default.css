@@ -11,21 +11,38 @@
   text-align: center;
   position: relative;
   -webkit-tap-highlight-color: transparent; }
+  .owl-theme .owl-nav .owl-prev{
+    left: -5px;
+    background: rgba(255,255,255,1);
+    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(231,56,39,0) 100%);
+    background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(231,56,39,0) 100%);
+    background-image: background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(231,56,39,0) 100%);
+    background-image: background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(231,56,39,0) 100%);
+    background-image: background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(231,56,39,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e73827', GradientType=1 );
+  }
+  .owl-theme .owl-nav .owl-next{
+    right: -5px;
+    background: rgba(255,255,255,1);
+    background: -webkit-linear-gradient(right, rgba(255,255,255,1) 0%, rgba(231,56,39,0) 100%);
+    background: -o-linear-gradient(right, rgba(255,255,255,1) 0%, rgba(231,56,39,0) 100%);
+    background-image: background: -webkit-linear-gradient(right, rgba(255,255,255,1) 0%, rgba(231,56,39,0) 100%);
+    background-image: background: -o-linear-gradient(right, rgba(255,255,255,1) 0%, rgba(231,56,39,0) 100%);
+    background-image: background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(231,56,39,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e73827', GradientType=1 );
+    
+  }
   .owl-theme .owl-nav [class*='owl-'] {
     color: #FFF;
     font-size: 14px;
     position: absolute;
-    top: 0;
+    height: 265px;
+    width: 126px;
+    top: -280px;
     margin: 5px;
     padding: 4px 7px;
-    background: #D6D6D6;
     display: inline-block;
-    cursor: pointer;
-    border-radius: 3px; }
-    .owl-theme .owl-nav [class*='owl-']:hover {
-      background: #869791;
-      color: #FFF;
-      text-decoration: none; }
+    cursor: pointer; }      
   .owl-theme .owl-nav .disabled {
     opacity: 0.5;
     cursor: default; }

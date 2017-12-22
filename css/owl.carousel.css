@@ -45,6 +45,13 @@
     -webkit-backface-visibility: hidden;
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none; }
+  .owl-carousel.review-slider .owl-item{
+    display: inline-block;
+    float: none;
+  }
+  .owl-carousel.review-slider .owl-stage-outer{
+    padding-top: 30px;
+  }
   .owl-carousel .owl-item img {
     display: block;
     width: 100%; }
