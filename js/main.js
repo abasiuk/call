@@ -23,9 +23,25 @@ $(document).ready(function(){
                 smartSpeed:3500, //Время движения слайда
                 autoplayTimeout:6000, //Время смены слайда
                 mouseDrag: true,
-                touchDrag: false,
+                touchDrag: true,
                 margin: 20,
                 dots: false, 
-                items: 3
+                responsive:{
+                    0:{
+                        items: 1
+                    },
+                    767:{
+                        items: 2,
+                        margin: 120
+                    },
+                    991:{
+                        items: 3
+                    }
+                }
+    });
+    $(".toggle-mnu").click(function() {
+        $(this).toggleClass("on");
+        $(".nav").toggleClass("active");
+        return false;
     });
 });
