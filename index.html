@@ -9,6 +9,10 @@
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
+	<div class="preloader" id="preloader">
+	    <div class="load"></div>
+	    <div class="load2"></div>
+	</div>
 	<header class="main-head">
 		<div class="container">
 			<div class="row">
@@ -30,12 +34,13 @@
 				<div class="col-md-8 col-md-pull-2 col-xs-12 ">
 					<nav class="nav">
 						<ul class="nav__list">
+							<li class="nav__item clearfix"><a href="#" class="toggle-mnu onmenu"><span></span></a></li>
 							<li class="nav__item"><a href="#about" class="nav__link">О нас</a></li>
 							<li class="nav__item"><a href="#clients" class="nav__link">Клиенты</a></li>
-							<li class="nav__item"><a href="#" class="nav__link">Услуги</a></li>
-							<li class="nav__item"><a href="#" class="nav__link">Карьера</a></li>
-							<li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
-							<li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+							<li class="nav__item"><a href="#services" class="nav__link">Услуги</a></li>
+							<li class="nav__item"><a href="#career" class="nav__link">Карьера</a></li>
+							<li class="nav__item"><a href="#reviews" class="nav__link">Отзывы</a></li>
+							<li class="nav__item"><a href="#contacs" class="nav__link">Контакты</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -50,7 +55,7 @@
 							<option value="1">Киев</option>
 							<option value="1">Львів</option>
 						</select>
-						<p class="city__text"><span class="city__phone">+38 (063) 924-67-37</span><span class="email">info@1call.center</span></p>
+						<p class="city__text"><span class="city__phone">+ 38 (063) 924-67-37</span><span class="email">info@1call.center</span></p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
@@ -129,7 +134,7 @@
 				<a href="#" class="butt__link">Стать клиентом</a>
 			</div>
 		</section>
-		<section class="services">
+		<section class="services" id="services">
 			<div class="container">
 				<div class="row">
 					<div class="header-sect">
@@ -164,7 +169,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="career">
+		<section class="career" id="career">
 			<div class="container">
 				<div class="row">
 					<div class="header-sect">
@@ -232,7 +237,7 @@
 					</div>
 					<div class="vacancies__desc vacancies__desc_office">Нас уже более 1000 человек в 6 офисах. <br> И у тебя есть шанс стать частью нашего дружного коллектива!</div>
 					<div class="our-advantages clearfix">
-						<h3 class="career__title">Преимущества работы у нас</h3>
+						<h3 class="career__title">Преимущества работы <span class="one-word">у нас</span></h3>
 						<div class="col-md-3 col-sm-6 col-xs-12">
 							<div class="our-advantages__item">
 								<h3 class="our-advantages__title advantages__list-item">Рост</h3>
@@ -242,7 +247,7 @@
 						<div class="col-md-3 col-sm-6 col-xs-12">
 							<div class="our-advantages__item">
 								<h3 class="our-advantages__title advantages__list-item">Развитие</h3>
-								<p class="our-advantages__desc vacancies__desc">8Продвинутая система внутреннего и внешнего обучения сотрудников</p>
+								<p class="our-advantages__desc vacancies__desc">Продвинутая система внутреннего и внешнего обучения сотрудников</p>
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-6 col-xs-12">
@@ -287,7 +292,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="reviews">
+		<section class="reviews" id="reviews">
 			<div class="container">
 				<div class="row">
 					<div class="header-sect">
@@ -361,7 +366,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="contacs">
+		<section class="contacs" id="contacs">
 			<div class="container">
 				<div class="row">
 					<div class="header-sect">
@@ -463,6 +468,5 @@
 	<script src="js/jquery-2.2.3.min.js"></script>
 	<script src="js/owl.carousel.js"></script>
 	<script src="js/main.js"></script>
-	<script src="js/pixelScreen.js"></script>
 </body>
 </html>
